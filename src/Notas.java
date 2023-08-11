@@ -6,7 +6,7 @@ public class Notas {
     public Notas(int[] notas){
         try {
             if(notas.length != notasPorAnio)
-                throw new NotasException("Formato para notas incorrecto");
+                throw new NotasException("Formato de notas incorrecto");
             this.notas = notas;
         } catch (NotasException e){
             e.printStackTrace();
